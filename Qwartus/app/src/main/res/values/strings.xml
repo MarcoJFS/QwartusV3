@@ -1,0 +1,351 @@
+<resources>
+    <string name="app_name">Qwartus</string>
+    <string name="registar">Registar</string>
+    <string name="login">Login</string>
+    <string name="distrito">Distrito</string>
+    <string name="concelho">Concelho</string>
+    <string name="procura">Procura</string>
+
+
+
+
+
+
+    <!-- array de distritos -->
+    <string-array name="arrayDistritos">
+        <item>Aveiro</item>
+        <item>Beja</item>
+        <item>Braga</item>
+        <item>Bragança</item>
+        <item>Castelo Branco</item>
+        <item>Coimbra</item>
+        <item>Évora</item>
+        <item>Faro</item>
+        <item>Guarda</item>
+        <item>Leiria</item>
+        <item>Lisboa</item>
+        <item>Portalegre</item>
+        <item>Porto</item>
+        <item>Santarém</item>
+        <item>Setúbal</item>
+        <item>Viana do Castelo</item>
+        <item>Vila Real</item>
+        <item>Viseu</item>
+    </string-array>
+
+    <!-- array de concelhos, está como - arrayConcelhos+'O nome do distrito' -->
+    <string-array name="arrayConcelhosAveiro">
+        <item>Águeda</item>
+        <item>Albergaria-a-Velha</item>
+        <item>Anadia</item>
+        <item>Arouca</item>
+        <item>Aveiro</item>
+        <item>Castelo de Paiva</item>
+        <item>Espinho</item>
+        <item>Estarreja</item>
+        <item>Ílhavo</item>
+        <item>Mealhada</item>
+        <item>Murtosa</item>
+        <item>Oliveira de Azeméis</item>
+        <item>Oliveira do Bairro</item>
+        <item>Ovar</item>
+        <item>Santa Maria da Feira</item>
+        <item>São João da Madeira</item>
+        <item>Sever do Vouga</item>
+        <item>Vagos</item>
+        <item>Vale de Cambra</item>
+    </string-array>
+    <string-array name="arrayConcelhosBeja">
+        <item>Aljustrel</item>
+        <item>Almodôvar</item>
+        <item>Alvito</item>
+        <item>Barrancos</item>
+        <item>Beja</item>
+        <item>Castro Verde</item>
+        <item>Cuba</item>
+        <item>Ferreira do Alentejo</item>
+        <item>Mértola</item>
+        <item>Moura</item>
+        <item>Odemira</item>
+        <item>Ourique</item>
+        <item>Serpa</item>
+        <item>Vidigueira</item>
+    </string-array>
+    <string-array name="arrayConcelhosBraga">
+        <item>Amares</item>
+        <item>Barcelos</item>
+        <item>Braga</item>
+        <item>Cabeceiras de Basto</item>
+        <item>Celorico de Basto</item>
+        <item>Esposende</item>
+        <item>Fafe</item>
+        <item>Guimarães</item>
+        <item>Póvoa de Lanhoso</item>
+        <item>Terras de Bouro</item>
+        <item>Vieira do Minho</item>
+        <item>Vila Nova de Famalicão</item>
+        <item>Vila Verde</item>
+        <item>Vizela</item>
+    </string-array>
+    <string-array name="arrayConcelhosBraganca">
+        <item>Alfândega da Fé</item>
+        <item>Bragança</item>
+        <item>Carrazeda de Ansiães</item>
+        <item>Freixo de Espada à Cinta</item>
+        <item>Macedo de Cavaleiros</item>
+        <item>Miranda do Douro</item>
+        <item>Mirandela</item>
+        <item>Mogadouro</item>
+        <item>Torre de Moncorvo</item>
+        <item>Vila Flor</item>
+        <item>Vimioso</item>
+        <item>Vinhais</item>
+    </string-array>
+    <string-array name="arrayConcelhosCasteloBranco">
+        <item>Belmonte</item>
+        <item>Castelo Branco</item>
+        <item>Covilhã</item>
+        <item>Fundão</item>
+        <item>Idanha-a-Nova</item>
+        <item>Oleiros</item>
+        <item>Penamacor</item>
+        <item>Proença-a-NovaSertã</item>
+        <item>Vila de Rei</item>
+        <item>Vila Velha de Ródão</item>
+    </string-array>
+    <string-array name="arrayConcelhosCoimbra">
+        <item>Arganil</item>
+        <item>Cantanhede</item>
+        <item>Coimbra</item>
+        <item>Condeixa-a-Nova</item>
+        <item>Figueira da Foz</item>
+        <item>Góis</item>
+        <item>Lousã</item>
+        <item>Mira</item>
+        <item>Miranda do Corvo</item>
+        <item>Montemor-o-Velho</item>
+        <item>Oliveira do Hospital</item>
+        <item>Pampilhosa da Serra</item>
+        <item>Penacova</item>
+        <item>Penela</item>
+        <item>Soure</item>
+        <item>Tábua</item>
+        <item>Vila Nova de Poiares</item>
+    </string-array>
+    <string-array name="arrayConcelhosEvora">
+        <item>Alandroal</item>
+        <item>Arraiolos</item>
+        <item>Borba</item>
+        <item>Estremoz</item>
+        <item>Évora</item>
+        <item>Montemor-o-Novo</item>
+        <item>Mora</item>
+        <item>Mourão</item>
+        <item>Olivença</item>
+        <item>Portel</item>
+        <item>Redondo</item>
+        <item>Reguengos de Monsaraz</item>
+        <item>Vendas Novas</item>
+        <item>Viana do Alentejo</item>
+        <item>Vila Viçosa</item>
+    </string-array>
+    <string-array name="arrayConcelhosFaro">
+        <item>Albufeira</item>
+        <item>Alcoutim</item>
+        <item>Aljezur</item>
+        <item>Castro Marim</item>
+        <item>Faro</item>
+        <item>Lagoa</item>
+        <item>Lagos</item>
+        <item>Loulé</item>
+        <item>Monchique</item>
+        <item>Olhão</item>
+        <item>Portimão</item>
+        <item>São Brás de Alportel</item>
+        <item>Silves</item>
+        <item>Tavira</item>
+        <item>Vila do Bispo</item>
+        <item>Vila Real de Santo António</item>
+    </string-array>
+    <string-array name="arrayConcelhosGuarda">
+        <item>Aguiar da Beira</item>
+        <item>Almeida</item>
+        <item>Celorico da Beira</item>
+        <item>Figueira de Castelo Rodrigo</item>
+        <item>Fornos de Algodres</item>
+        <item>Gouveia</item>
+        <item>Guarda</item>
+        <item>Manteigas</item>
+        <item>Mêda</item>
+        <item>Pinhel</item>
+        <item>Sabugal</item>
+        <item>Seia</item>
+        <item>Trancoso</item>
+        <item>Vila Nova de Foz Côa</item>
+    </string-array>
+    <string-array name="arrayConcelhosLeiria">
+        <item>Alcobaça</item>
+        <item>Alvaiázere</item>
+        <item>Ansião</item>
+        <item>Batalha</item>
+        <item>Bombarral</item>
+        <item>Caldas da Rainha</item>
+        <item>Castanheira de Pera</item>
+        <item>Figueiró dos Vinhos</item>
+        <item>Leiria</item>
+        <item>Marinha Grande</item>
+        <item>Nazaré</item>
+        <item>Óbidos</item>
+        <item>Pedrógão Grande</item>
+        <item>Peniche</item>
+        <item>Pombal</item>
+        <item>Porto de Mós</item>
+    </string-array>
+    <string-array name="arrayConcelhosLisboa">
+        <item>Alenquer</item>
+        <item>Amadora</item>
+        <item>Arruda dos Vinhos</item>
+        <item>Azambuja</item>
+        <item>Cadaval</item>
+        <item>Cascais</item>
+        <item>Lisboa</item>
+        <item>Loures</item>
+        <item>Lourinhã</item>
+        <item>Mafra</item>
+        <item>Odivelas</item>
+        <item>Oeiras</item>
+        <item>Sintra</item>
+        <item>Sobral de Monte Agraço</item>
+        <item>Torres Vedras</item>
+        <item>Vila Franca de Xira</item>
+    </string-array>
+    <string-array name="arrayConcelhosPortalegre">
+        <item>Alter do Chão</item>
+        <item>Arronches</item>
+        <item>Avis</item>
+        <item>Campo Maior</item>
+        <item>Castelo de Vide</item>
+        <item>Crato</item>
+        <item>Elvas</item>
+        <item>Fronteira</item>
+        <item>Gavião</item>
+        <item>Marvão</item>
+        <item>Monforte</item>
+        <item>Nisa</item>
+        <item>Ponte de Sor</item>
+        <item>Portalegre</item>
+        <item>Sousel</item>
+    </string-array>
+    <string-array name="arrayConcelhosPorto">
+        <item>Amarante</item>
+        <item>Baião</item>
+        <item>Felgueiras</item>
+        <item>Gondomar</item>
+        <item>Lousada</item>
+        <item>Maia</item>
+        <item>Marco de Canaveses</item>
+        <item>Matosinhos</item>
+        <item>Paços de Ferreira</item>
+        <item>Paredes</item>
+        <item>Penafiel</item>
+        <item>Porto</item>
+        <item>Póvoa de Varzim</item>
+        <item>Santo Tirso</item>
+        <item>Trofa</item>
+        <item>Valongo</item>
+        <item>Vila do Conde</item>
+        <item>Vila Nova de Gaia</item>
+    </string-array>
+    <string-array name="arrayConcelhosSantarem">
+        <item>Abrantes</item>
+        <item>Alcanena</item>
+        <item>Almeirim</item>
+        <item>Alpiarça</item>
+        <item>Benavente</item>
+        <item>Cartaxo</item>
+        <item>Chamusca</item>
+        <item>Constância</item>
+        <item>Coruche</item>
+        <item>Entroncamento</item>
+        <item>Ferreira do Zêzere</item>
+        <item>Golegã</item>
+        <item>Mação</item>
+        <item>Ourém</item>
+        <item>Rio Maior</item>
+        <item>Salvaterra de Magos</item>
+        <item>Santarém</item>
+        <item>Sardoal</item>
+        <item>Tomar</item>
+        <item>Torres Novas</item>
+        <item>Vila Nova da Barquinha</item>
+    </string-array>
+    <string-array name="arrayConcelhosSetubal">
+        <item>Alcácer do Sal</item>
+        <item>Alcochete</item>
+        <item>Almada</item>
+        <item>Barreiro</item>
+        <item>Grândola</item>
+        <item>Moita</item>
+        <item>Montijo</item>
+        <item>Palmela</item>
+        <item>Santiago do Cacém</item>
+        <item>Seixal</item>
+        <item>Sesimbra</item>
+        <item>Setúbal</item>
+        <item>Sines</item>
+    </string-array>
+    <string-array name="arrayConcelhosVianadoCastelo">
+        <item>Arcos de Valdevez</item>
+        <item>Caminha</item>
+        <item>Melgaço</item>
+        <item>Monção</item>
+        <item>Paredes de Coura</item>
+        <item>Ponte da Barca</item>
+        <item>Ponte de Lima</item>
+        <item>Valença</item>
+        <item>Viana do Castelo</item>
+        <item>Vila Nova de Cerveira</item>
+    </string-array>
+    <string-array name="arrayConcelhosVilaReal">
+        <item>Alijó</item>
+        <item>Boticas</item>
+        <item>Chaves</item>
+        <item>Mesão Frio</item>
+        <item>Mondim de Basto</item>
+        <item>Montalegre</item>
+        <item>Murça</item>
+        <item>Peso da Régua</item>
+        <item>Ribeira de Pena</item>
+        <item>Sabrosa</item>
+        <item>Santa Marta de Penaguião</item>
+        <item>Valpaços</item>
+        <item>Vila Pouca de Aguiar</item>
+        <item>Vila Real</item>
+    </string-array>
+    <string-array name="arrayConcelhosViseu">
+        <item>Armamar</item>
+        <item>Carregal do Sal</item>
+        <item>Castro Daire</item>
+        <item>Cinfães</item>
+        <item>Lamego</item>
+        <item>Mangualde</item>
+        <item>Moimenta da Beira</item>
+        <item>Mortágua</item>
+        <item>Nelas</item>
+        <item>Oliveira de Frades</item>
+        <item>Penalva do Castelo</item>
+        <item>Penedono</item>
+        <item>Resende</item>
+        <item>Santa Comba Dão</item>
+        <item>São João da Pesqueira</item>
+        <item>São Pedro do Sul</item>
+        <item>Sátão</item>
+        <item>Sernancelhe</item>
+        <item>Tabuaço</item>
+        <item>Tarouca</item>
+        <item>Tondela</item>
+        <item>Vila Nova de Paiva</item>
+        <item>Viseu</item>
+        <item>Vouzela</item>
+    </string-array>
+</resources>
