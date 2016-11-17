@@ -10,14 +10,12 @@ import android.view.View.OnClickListener;
 
 public class ac_Qwartus extends AppCompatActivity {
 
-
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ac__qwartus);
 
+        // Busca o Spinner Distrito
         Spinner spinnerDistrito = (Spinner) findViewById(R.id.spinnerDistrito);
 
         // Create an ArrayAdapter using the string array and a default spinner layout
@@ -28,9 +26,11 @@ public class ac_Qwartus extends AppCompatActivity {
         // Apply the adapter to the spinner
         spinnerDistrito.setAdapter(adapter);
 
+        // Evento: Ao clickar no distrito
         spinnerDistrito.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                // busca os spinners
                 Spinner spinnerConcelho = (Spinner) findViewById(R.id.spinnerConcelho);
                 Spinner spinnerDistrito = (Spinner) findViewById(R.id.spinnerDistrito);
 
@@ -191,6 +191,7 @@ public class ac_Qwartus extends AppCompatActivity {
             public void onNothingSelected(AdapterView<?> parent) {
 
             }
+
         });
 
     }
