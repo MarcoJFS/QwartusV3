@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_menu_login_feito"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="pt.ipleira.estg.qwartus.MenuLoginFeito">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:layout_width="match_parent"
+            app:srcCompat="@mipmap/qwartus2"
+            android:id="@+id/QwartusLogo"
+            android:layout_height="100dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="@string/user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:textSize="@dimen/menuTextDimensions"
+                android:id="@+id/tvuser" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/tvuser"
+                android:textSize="@dimen/menuTextDimensions"
+                android:id="@+id/tvNomeUser" />
+        </RelativeLayout>
+
+        <TextView
+            android:text="@string/rate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/menuTextDimensions"
+            android:id="@+id/tvRate" />
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:stepSize="0.1"
+            android:id="@+id/ratingBar"
+            android:layout_gravity="left"
+            android:isIndicator="false" />
+
+        <TextView
+            android:text="@string/distrito"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="40dp"
+            android:id="@+id/tvDistrito" />
+
+        <Spinner
+            android:id="@+id/spinnerDistrito"
+            android:layout_height="50dp"
+            android:layout_width="match_parent" />
+
+        <TextView
+            android:text="@string/concelho"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="40dp"
+            android:id="@+id/tvConcelho" />
+
+        <Spinner
+            android:id="@+id/spinnerConcelho"
+            android:layout_height="50dp"
+            android:layout_width="match_parent" />
+
+        <Button
+            android:text="@string/procura"
+            android:layout_width="200dp"
+            android:layout_height="75dp"
+            android:textSize="@dimen/menuTextButtonDimensions"
+            android:id="@+id/btnProcura" />
+
+    </LinearLayout>
+</RelativeLayout>
