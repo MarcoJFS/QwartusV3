@@ -8,7 +8,11 @@ import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 import android.view.View.OnClickListener;
 
+import static pt.ipleira.estg.qwartus.R.id.button;
+
 public class ac_Qwartus extends AppCompatActivity {
+
+    //private button
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -193,6 +197,8 @@ public class ac_Qwartus extends AppCompatActivity {
             }
 
         });
+
+
 
     }
 }

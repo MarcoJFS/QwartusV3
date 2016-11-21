@@ -8,15 +8,17 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ac_Qwartus">
+        <activity
+            android:name=".ac_Qwartus"
+            android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MenuLoginFeito" />
-        <activity android:name=".LoginPage" />
+        <activity
+            android:name=".MenuLoginFeito"> </activity>
+        <activity android:name=".LoginPage"> </activity>
         <activity android:name=".RegisterPage"></activity>
     </application>
 
