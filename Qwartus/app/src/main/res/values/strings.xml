@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Qwartus</string>
     <string name="registar">Registar</string>
+    <string name="registo">Registo</string>
     <string name="login">Login</string>
     <string name="distrito">Distrito</string>
     <string name="concelho">Concelho</string>

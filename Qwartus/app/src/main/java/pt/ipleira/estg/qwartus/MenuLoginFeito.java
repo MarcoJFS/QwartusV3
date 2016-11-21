@@ -1,10 +1,12 @@
 package pt.ipleira.estg.qwartus;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.Spinner;
 
 public class MenuLoginFeito extends AppCompatActivity {
@@ -191,6 +193,24 @@ public class MenuLoginFeito extends AppCompatActivity {
 
             }
 
+        });
+
+        Button btnLogin = (Button) findViewById(R.id.btnLogin);
+        btnLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent("android.intent.qwartus.LOGINPAGE");
+                startActivity(i);
+            }
+        });
+
+        Button btnRegistar = (Button) findViewById(R.id.btnRegistar);
+        btnRegistar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent("android.intent.qwartus.REGISTERPAGE");
+                startActivity(i);
+            }
         });
     }
 }
