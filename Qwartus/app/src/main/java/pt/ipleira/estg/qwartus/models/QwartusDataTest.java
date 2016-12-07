@@ -17,11 +17,11 @@ public class QwartusDataTest {
         if (anuncios == null){
             anuncios = new ArrayList<>();
 
-            anuncios.add(new Anuncio("Titulo 1","Descricao 1","Preco", R.drawable.qwartus2));
-            anuncios.add(new Anuncio("Titulo 1","Descricao 1","Preco", R.drawable.qwartus2));
-            anuncios.add(new Anuncio("Titulo 1","Descricao 1","Preco", R.drawable.qwartus2));
-            anuncios.add(new Anuncio("Titulo 1","Descricao 1","Preco", R.drawable.qwartus2));
-            anuncios.add(new Anuncio("Titulo 1","Descricao 1","Preco", R.drawable.qwartus2));
+            anuncios.add(new Anuncio("Titulo 1","Descricao 1","150€", R.drawable.qwartus2));
+            anuncios.add(new Anuncio("Titulo 1","Descricao 1","190€", R.drawable.qwartus2));
+            anuncios.add(new Anuncio("Titulo 1","Descricao 1","155€", R.drawable.qwartus2));
+            anuncios.add(new Anuncio("Titulo 1","Descricao 1","160€", R.drawable.qwartus2));
+            anuncios.add(new Anuncio("Titulo 1","Descricao 1","180€", R.drawable.qwartus2));
         }
         return anuncios;
     }
