@@ -22,6 +22,7 @@
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.qwartus.MENULOGINFEITO" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
@@ -30,6 +31,7 @@
             android:label="@string/login">
             <intent-filter>
                 <action android:name="android.intent.qwartus.LOGINPAGE" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
@@ -38,6 +40,16 @@
             android:label="@string/registo">
             <intent-filter>
                 <action android:name="android.intent.qwartus.REGISTERPAGE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ResultadoPesquisa"
+            android:label="@string/resultadosPesquisa">
+            <intent-filter>
+                <action android:name="android.intent.qwartus.RESULTADOPESQUISA" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>

@@ -6,6 +6,7 @@
     <string name="distrito">Distrito</string>
     <string name="concelho">Concelho</string>
     <string name="procura">Procura</string>
+    <string name="resultadosPesquisa">Resultados Pesuisa</string>
     <string name="user">User: </string>
     <string name="rate">Rate:</string>
     <string name="username">UserName:</string>
@@ -350,4 +351,6 @@
         <item>Viseu</item>
         <item>Vouzela</item>
     </string-array>
+    
+
 </resources>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="@dimen/LayoutListViewImgWidth"
+            android:layout_height="@dimen/LayoutListViewImgHigh"
+            app:srcCompat="@android:drawable/ic_menu_info_details"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="14dp"
+            android:id="@+id/imgv_ImgAnuncioLV" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="@dimen/LayoutListViewTituloDescricaoWidth"
+            android:id="@+id/txtvTituloLV"
+            android:layout_alignTop="@+id/imgv_ImgAnuncioLV"
+            android:layout_toEndOf="@+id/imgv_ImgAnuncioLV"
+            android:layout_marginStart="19dp"
+            android:layout_height="@dimen/LayoutListTituloPreçoHigh" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="@dimen/LayoutListViewTituloDescricaoWidth"
+            android:layout_marginTop="11dp"
+            android:id="@+id/txtvDescricaoLV"
+            android:layout_below="@+id/txtvTituloLV"
+            android:layout_alignStart="@+id/txtvTituloLV"
+            android:layout_height="@dimen/LayoutListViewDescricaoHigh" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/LayoutListTituloPreçoHigh"
+            android:id="@+id/txtPreçoLV"
+            android:layout_alignBottom="@+id/imgv_ImgAnuncioLV"
+            android:layout_alignEnd="@+id/txtvDescricaoLV" />
+    </RelativeLayout>
+</LinearLayout>

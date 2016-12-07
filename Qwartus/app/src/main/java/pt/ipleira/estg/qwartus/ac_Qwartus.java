@@ -214,5 +214,15 @@ public class ac_Qwartus extends AppCompatActivity {
             }
         });
 
+        Button btnProcurar = (Button) findViewById(R.id.btnProcura);
+        btnProcurar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent("android.intent.qwartus.RESULTADOPESQUISA");
+                startActivity(i);
+            }
+
+        });
+
     }
 }

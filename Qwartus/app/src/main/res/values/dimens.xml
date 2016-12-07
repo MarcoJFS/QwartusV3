@@ -5,4 +5,9 @@
     <dimen name="fab_margin">16dp</dimen>
     <dimen name="menuTextDimensions">25dp</dimen>
     <dimen name="menuTextButtonDimensions">35dp</dimen>
+    <dimen name="LayoutListViewImgHigh">95dp</dimen>
+    <dimen name="LayoutListViewImgWidth">120dp</dimen>
+    <dimen name="LayoutListViewTituloDescricaoWidth">200dp</dimen>
+    <dimen name="LayoutListTituloPreçoHigh">20dp</dimen>
+    <dimen name="LayoutListViewDescricaoHigh">35dp</dimen>
 </resources>
