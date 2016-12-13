@@ -53,6 +53,14 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity android:name=".detalhesPesquisa"
+            android:label="@string/detalhesPesquisa">
+            <intent-filter>
+                <action android:name="android.intent.qwartus.DETALHESPESQUISA" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

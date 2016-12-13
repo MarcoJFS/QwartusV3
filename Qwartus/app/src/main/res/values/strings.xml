@@ -7,12 +7,14 @@
     <string name="concelho">Concelho</string>
     <string name="procura">Procura</string>
     <string name="resultadosPesquisa">Resultados Pesuisa</string>
+    <string name="detalhesPesquisa">Detalhes Pesuisa</string>
     <string name="user">User: </string>
     <string name="rate">Rate:</string>
     <string name="username">UserName:</string>
     <string name="password">Password:</string>
     <string name="email">Email:</string>
     <string name="confirmpassword">Cornfirmar Password:</string>
+    <string name="proprietário">Proprietário</string>
 
     <!-- array de distritos -->
     <string-array name="arrayDistritos">
@@ -351,6 +353,8 @@
         <item>Viseu</item>
         <item>Vouzela</item>
     </string-array>
-    
+    <string name="title_activity_teste">teste</string>
+    <string name="title_activity_detalhes_pesquisa">DetalhesPesquisa</string>
+
 
 </resources>
