@@ -7,6 +7,7 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+<<<<<<< HEAD
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -17,6 +18,8 @@ import com.koushikdutta.ion.Ion;
 
 import org.json.JSONException;
 import org.json.JSONObject;
+=======
+>>>>>>> origin/master
 
 
 public class LoginPage extends AppCompatActivity {
@@ -36,6 +39,7 @@ public class LoginPage extends AppCompatActivity {
             }
         });
 
+<<<<<<< HEAD
         /*FloatingActionButton FloatingButtonPlus = (FloatingActionButton) findViewById(R.id.FloatingButtonPlus);
         FloatingButtonPlus.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -51,6 +55,15 @@ public class LoginPage extends AppCompatActivity {
 
         final EditText Username = (EditText) findViewById(R.id.etUserName);
         EditText Password = (EditText) findViewById(R.id.etPassword);
+=======
+        Button btnLogin = (Button) findViewById(R.id.btnLogin);
+        btnLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+>>>>>>> origin/master
     }
 }
 
