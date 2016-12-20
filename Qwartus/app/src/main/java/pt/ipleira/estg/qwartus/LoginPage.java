@@ -60,7 +60,7 @@ public class LoginPage extends AppCompatActivity {
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Ion.with(getApplicationContext())
             }
         });
 >>>>>>> origin/master
