@@ -1,4 +1,7 @@
 <resources>
+
+    <!-- Layouts -->
+
     <string name="app_name">Qwartus</string>
     <string name="registar">Registar</string>
     <string name="registo">Registo</string>
@@ -10,11 +13,19 @@
     <string name="detalhesPesquisa">Detalhes Pesuisa</string>
     <string name="user">User: </string>
     <string name="rate">Rate:</string>
-    <string name="username">UserName:</string>
+    <string name="username">Username:</string>
     <string name="password">Password:</string>
     <string name="email">Email:</string>
     <string name="confirmpassword">Cornfirmar Password:</string>
     <string name="proprietário">Proprietário</string>
+    <string name="local">Local</string>
+    <string name="descricao">Descrição</string>
+    <string name="imagens">Imagens</string>
+    <string name="preco">Preço</string>
+    <string name="contacto">Contactar</string>
+    <string name="NotMember">Ainda não é membro.</string>
+    <string name="AddImg">Adicionar Imagens</string>
+    <string name="guadar">Guardar</string>
 
     <!-- array de distritos -->
     <string-array name="arrayDistritos">

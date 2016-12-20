@@ -20,7 +20,7 @@
         android:layout_centerHorizontal="true" />
 
     <TextView
-        android:text="User:"
+        android:text="@string/user"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textView"
@@ -46,19 +46,19 @@
         android:id="@+id/btnGuardar" />
 
     <TextView
-        android:text="Local:"
+        android:text="@string/local"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
-        android:id="@+id/textView3"
+        android:id="@+id/tvLocal"
         android:layout_alignBottom="@+id/imageView2"
         android:layout_alignParentStart="true" />
 
     <TextView
-        android:text="Descrição:"
+        android:text="@string/descricao"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/textView4"
+        android:id="@+id/tvDescricao"
         android:layout_below="@+id/etxtLocal"
         android:layout_alignStart="@+id/etxtLocal" />
 
@@ -69,8 +69,8 @@
         android:text="qwerty"
         android:ems="10"
         android:id="@+id/etxtDescricao"
-        android:layout_below="@+id/textView4"
-        android:layout_alignStart="@+id/textView4"
+        android:layout_below="@+id/tvDescricao"
+        android:layout_alignStart="@+id/tvDescricao"
         android:layout_marginTop="12dp" />
 
     <ImageView
@@ -83,7 +83,7 @@
         android:layout_alignParentStart="true" />
 
     <Button
-        android:text="Adicionar Imagem"
+        android:text="@string/AddImg"
         android:id="@+id/btnAddImagem"
         android:layout_height="40dp"
         android:layout_width="200dp"
@@ -92,10 +92,10 @@
         android:layout_alignParentEnd="true" />
 
     <TextView
-        android:text="Preço:"
+        android:text="@string/preco"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/textView5"
+        android:id="@+id/tvPreco"
         android:layout_marginBottom="25dp"
         android:layout_above="@+id/btnGuardar"
         android:layout_alignStart="@+id/etxtDescricao" />
@@ -117,7 +117,7 @@
         android:text="2222"
         android:ems="10"
         android:id="@+id/etxtPreço"
-        android:layout_alignBaseline="@+id/textView5"
-        android:layout_alignBottom="@+id/textView5"
+        android:layout_alignBaseline="@+id/tvPreco"
+        android:layout_alignBottom="@+id/tvPreco"
         android:layout_toEndOf="@+id/txtvUser" />
 </RelativeLayout>

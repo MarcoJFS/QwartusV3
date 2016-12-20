@@ -24,7 +24,7 @@
         android:textSize="18sp" />
 
     <TextView
-        android:text="Local:"
+        android:text="@string/local"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView15"
@@ -45,7 +45,7 @@
         android:textSize="18sp" />
 
     <TextView
-        android:text="Descrição:"
+        android:text="@string/descricao"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -64,7 +64,7 @@
         android:textSize="18sp" />
 
     <TextView
-        android:text="Propriatário:"
+        android:text="@string/proprietário"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textView15"
@@ -74,16 +74,16 @@
         android:textSize="18sp" />
 
     <Button
-        android:text="COntactar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/btnContactar"
         android:layout_alignParentBottom="true"
-        android:layout_alignEnd="@+id/txtvDescricao" />
+        android:layout_alignEnd="@+id/txtvDescricao"
+        android:text="@string/contacto" />
 
 
     <TextView
-        android:text="Preço:"
+        android:text="@string/preco"
         android:layout_width="100dp"
         android:id="@+id/textView22"
         android:layout_height="25dp"
@@ -93,7 +93,7 @@
         android:layout_alignStart="@+id/textView21" />
 
     <TextView
-        android:text="Imagens:"
+        android:text="@string/imagens"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textView21"
@@ -124,7 +124,7 @@
         android:text="500"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/txtvPreco"
+        android:id="@+id/tvPreco"
         android:textSize="18sp"
         android:layout_alignBaseline="@+id/textView22"
         android:layout_alignBottom="@+id/textView22"
