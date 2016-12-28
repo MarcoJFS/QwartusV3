@@ -27,6 +27,8 @@
     <string name="AddImg">Adicionar Imagens</string>
     <string name="guadar">Guardar</string>
 
+    <string name="NseleNd">Não selecionou nenhum concelho.</string>
+
     <!-- array de distritos -->
     <string-array name="arrayDistritos">
         <item>Aveiro</item>
