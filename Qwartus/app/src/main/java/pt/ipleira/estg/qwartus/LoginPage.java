@@ -14,6 +14,9 @@ import com.koushikdutta.async.future.FutureCallback;
 import com.koushikdutta.ion.Ion;
 import com.koushikdutta.ion.Response;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
 
 public class LoginPage extends AppCompatActivity {
 
@@ -38,6 +41,14 @@ public class LoginPage extends AppCompatActivity {
         final int duration = Toast.LENGTH_SHORT;
         final Context context = getApplicationContext();
 
+        /*FloatingActionButton FloatingButtonPlus = (FloatingActionButton) findViewById(R.id.FloatingButtonPlus);
+        FloatingButtonPlus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent("android.intent.qwartus.REGISTERPAGE");
+                startActivity(i);
+            }
+        });*/
 
         final String Username = ((EditText) findViewById(R.id.etUserName)).getText().toString();
         final String Password = ((EditText) findViewById(R.id.etPassword)).getText().toString();
@@ -48,6 +59,9 @@ public class LoginPage extends AppCompatActivity {
         final JsonObject json = new JsonObject();
         json.addProperty("username", Username);
         json.addProperty("password", Password);
+
+        final EditText Username = (EditText) findViewById(R.id.etUserName);
+        EditText Password = (EditText) findViewById(R.id.etPassword);
 
         Button btnLogin = (Button) findViewById(R.id.btnLogin);
         btnLogin.setOnClickListener(new View.OnClickListener() {

@@ -9,6 +9,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 public class ac_Qwartus extends AppCompatActivity {
 
@@ -19,6 +20,8 @@ public class ac_Qwartus extends AppCompatActivity {
 
         // Busca o Spinner Distrito
         Spinner spinnerDistrito = (Spinner) findViewById(R.id.spinnerDistrito);
+        //Busca o Spinner Concelho
+        Spinner spinerConcelho = (Spinner) findViewById(R.id.spinnerConcelho);
 
         // Create an ArrayAdapter using the string array and a default spinner layout
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
@@ -215,12 +218,21 @@ public class ac_Qwartus extends AppCompatActivity {
         });
 
         Button btnProcurar = (Button) findViewById(R.id.btnProcura);
+        final String spinertxt= spinerConcelho.getSelectedItem().toString();
+
         btnProcurar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent("android.intent.qwartus.RESULTADOPESQUISA");
-                startActivity(i);
-            }
+
+                switch (spinertxt)
+                {
+                    case ""
+                }
+
+                        Intent i = new Intent("android.intent.qwartus.RESULTADOPESQUISA");
+                        startActivity(i);
+
+                            }
 
         });
 
