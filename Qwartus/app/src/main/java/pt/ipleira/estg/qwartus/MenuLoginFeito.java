@@ -1,9 +1,8 @@
 package pt.ipleira.estg.qwartus;
 
 import android.content.Intent;
-import android.net.Uri;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -27,6 +26,23 @@ public class MenuLoginFeito extends AppCompatActivity {
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         // Apply the adapter to the spinner
         spinnerDistrito.setAdapter(adapter);
+
+        Button btnLogout = (Button) findViewById(R.id.btnLogout);
+        btnLogout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                /*LoginClassSave.token = "";
+                LoginClassSave.account.username = "";
+                LoginClassSave.account.email = "";
+                LoginClassSave.account.id = 0;*/
+                LoginClassSave.login = false;
+
+                Intent i = new Intent("android.intent.qwartus.NOVOANUNCIO");
+                startActivity(i);
+
+                finish();
+            }
+        });
 
         // Evento: Ao clickar no distrito
         spinnerDistrito.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {

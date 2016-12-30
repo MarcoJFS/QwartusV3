@@ -15,8 +15,8 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_alignParentTop="true"
         android:gravity="center_horizontal"
+        android:layout_alignParentTop="true"
         android:layout_alignParentStart="true">
 
         <ImageView
@@ -24,6 +24,15 @@
             app:srcCompat="@mipmap/qwartus2"
             android:id="@+id/QwartusLogo"
             android:layout_height="100dp" />
+
+        <Button
+            android:text="@string/logout"
+            android:layout_width="181dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/relativeLayout"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/btnLogout" />
 
         <RelativeLayout
             android:layout_width="match_parent"

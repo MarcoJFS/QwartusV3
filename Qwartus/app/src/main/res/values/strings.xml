@@ -3,11 +3,13 @@
     <string name="registar">Registar</string>
     <string name="registo">Registo</string>
     <string name="login">Login</string>
+    <string name="logout">Logout</string>
     <string name="distrito">Distrito</string>
     <string name="concelho">Concelho</string>
     <string name="procura">Procura</string>
     <string name="resultadosPesquisa">Resultados Pesuisa</string>
     <string name="detalhesPesquisa">Detalhes Pesuisa</string>
+    <string name="novoAnuncio">Novo Anuncio</string>
     <string name="user">User: </string>
     <string name="rate">Rate:</string>
     <string name="username">UserName:</string>

@@ -36,15 +36,6 @@
         android:layout_alignParentTop="true"
         android:layout_toEndOf="@+id/textView" />
 
-    <Button
-        android:text="Guardar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="12dp"
-        android:id="@+id/btnGuardar" />
-
     <TextView
         android:text="Local:"
         android:layout_width="wrap_content"
@@ -55,12 +46,49 @@
         android:layout_alignParentStart="true" />
 
     <TextView
-        android:text="Descrição:"
+        android:text="Preço:"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/textView4"
-        android:layout_below="@+id/etxtLocal"
-        android:layout_alignStart="@+id/etxtLocal" />
+        android:id="@+id/textView5"
+        android:layout_marginBottom="25dp"
+        android:layout_above="@+id/btnGuardar"
+        android:layout_alignStart="@+id/etxtAssunto" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text|numberDecimal"
+        android:text="2222"
+        android:ems="10"
+        android:id="@+id/etxtPreco"
+        android:layout_alignBaseline="@+id/textView5"
+        android:layout_alignBottom="@+id/textView5"
+        android:layout_toEndOf="@+id/txtvUser" />
+
+    <Button
+        android:text="Guardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnGuardar"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Adicionar Imagem"
+        android:id="@+id/btnAddImagem"
+        android:layout_height="40dp"
+        android:layout_width="200dp"
+        android:layout_alignBottom="@+id/imvImagens"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_width="100dp"
+        app:srcCompat="@android:drawable/ic_menu_add"
+        android:id="@+id/imvImagens"
+        android:layout_height="100dp"
+        android:layout_above="@+id/etxtPreco"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="21dp" />
 
     <EditText
         android:layout_width="300dp"
@@ -69,55 +97,52 @@
         android:text="qwerty"
         android:ems="10"
         android:id="@+id/etxtDescricao"
-        android:layout_below="@+id/textView4"
+        android:layout_above="@+id/imvImagens"
         android:layout_alignStart="@+id/textView4"
-        android:layout_marginTop="12dp" />
-
-    <ImageView
-        android:layout_width="100dp"
-        app:srcCompat="@android:drawable/ic_menu_add"
-        android:id="@+id/imvImagens"
-        android:layout_height="100dp"
-        android:layout_marginTop="52dp"
-        android:layout_below="@+id/etxtDescricao"
-        android:layout_alignParentStart="true" />
-
-    <Button
-        android:text="Adicionar Imagem"
-        android:id="@+id/btnAddImagem"
-        android:layout_height="40dp"
-        android:layout_width="200dp"
-        android:layout_marginBottom="24dp"
-        android:layout_alignBottom="@+id/imvImagens"
-        android:layout_alignParentEnd="true" />
-
-    <TextView
-        android:text="Preço:"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView5"
-        android:layout_marginBottom="25dp"
-        android:layout_above="@+id/btnGuardar"
-        android:layout_alignStart="@+id/etxtDescricao" />
+        android:layout_toStartOf="@+id/btnAddImagem"
+        android:layout_alignEnd="@+id/etxtAssunto" />
 
     <EditText
+        android:layout_width="300dp"
         android:layout_height="50dp"
         android:inputType="textMultiLine"
-        android:text="123456"
+        android:text="qwerty"
         android:ems="10"
-        android:id="@+id/etxtLocal"
-        android:layout_width="300dp"
-        android:layout_below="@+id/imageView2"
-        android:layout_toEndOf="@+id/textView" />
+        android:id="@+id/etxtAssunto"
+        android:layout_above="@+id/etxtDescricao"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="17dp" />
 
-    <EditText
+    <TextView
+        android:text="Descrição:"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="text|numberDecimal"
-        android:text="2222"
-        android:ems="10"
-        android:id="@+id/etxtPreço"
-        android:layout_alignBaseline="@+id/textView5"
-        android:layout_alignBottom="@+id/textView5"
-        android:layout_toEndOf="@+id/txtvUser" />
+        android:id="@+id/textView2"
+        android:layout_above="@+id/etxtDescricao"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Assunto:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView7"
+        android:layout_above="@+id/etxtAssunto"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView7"
+        android:layout_marginBottom="13dp"
+        android:id="@+id/spinnerLocalDistrito"
+        android:layout_below="@+id/imageView2"
+        android:layout_width="175dp" />
+
+    <Spinner
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnerLocalConcelho"
+        android:layout_width="175dp"
+        android:layout_below="@+id/imageView2"
+        android:layout_toEndOf="@+id/spinnerLocalDistrito"
+        android:layout_alignBottom="@+id/spinnerLocalDistrito" />
+
 </RelativeLayout>

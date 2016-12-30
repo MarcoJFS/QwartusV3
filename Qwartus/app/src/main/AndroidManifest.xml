@@ -2,7 +2,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="pt.ipleira.estg.qwartus">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <!-- <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission> -->
+    <!-- <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/> -->
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <!-- <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission> -->
+    <!-- <uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission> -->
+    <!-- <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" /> -->
 
     <application
         android:allowBackup="true"
@@ -59,6 +64,14 @@
             android:label="@string/detalhesPesquisa">
             <intent-filter>
                 <action android:name="android.intent.qwartus.DETALHESPESQUISA" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".NovoAnuncio"
+            android:label="@string/novoAnuncio">
+            <intent-filter>
+                <action android:name="android.intent.qwartus.NOVOANUNCIO" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
