@@ -60,8 +60,8 @@ public class LoginPage extends AppCompatActivity {
         json.addProperty("username", Username);
         json.addProperty("password", Password);
 
-        final EditText Username = (EditText) findViewById(R.id.etUserName);
-        EditText Password = (EditText) findViewById(R.id.etPassword);
+        //final EditText Username = (EditText) findViewById(R.id.etUserName);
+       // EditText Password = (EditText) findViewById(R.id.etPassword);
 
         Button btnLogin = (Button) findViewById(R.id.btnLogin);
         btnLogin.setOnClickListener(new View.OnClickListener() {

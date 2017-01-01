@@ -10,4 +10,8 @@
     <dimen name="LayoutListViewTituloDescricaoWidth">200dp</dimen>
     <dimen name="LayoutListTituloPreçoHigh">20dp</dimen>
     <dimen name="LayoutListViewDescricaoHigh">35dp</dimen>
+    <dimen name="LayoutPaginaUserBtnContatoHeight">40dp</dimen>
+    <dimen name="LayoutPaginaUserBtnContatoWidth">100dp</dimen>
+    <dimen name="LayoutPaginaUserBtnAnunciosWidth">200dp</dimen>
+    <dimen name="LayoutPaginaUserBtnAnunciosHight">50dp</dimen>
 </resources>

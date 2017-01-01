@@ -13,6 +13,8 @@
     <string name="resultadosPesquisa">Resultados Pesuisa</string>
     <string name="detalhesPesquisa">Detalhes Pesuisa</string>
     <string name="novoAnuncio">Novo Anuncio</string>
+    <string name="PaginaUser">PAgina do utilizador</string>
+    <string name="AnunciosDoUser">Sues anuncios</string>
     <string name="user">User: </string>
     <string name="rate">Rate:</string>
     <string name="username">Username:</string>
@@ -28,6 +30,13 @@
     <string name="NotMember">Ainda não é membro.</string>
     <string name="AddImg">Adicionar Imagens</string>
     <string name="guadar">Guardar</string>
+    <string name="PaginaUserNome">Nome:</string>
+    <string name="PaginaUserApelido">Apelido:</string>
+    <string name="PaginaUserContato">Contato:</string>
+    <string name="PaginaUserEmail">Email:</string>
+    <string name="PaginaUserNrAnuncios">Número de anúncios:</string>
+    <string name="PaginaUserBtnAnuncios">Anuncios</string>
+    <string name="btnAlterarContactoAlterar">Alterar</string>
 
     <string name="NseleNd">Não selecionou nenhum concelho.</string>
 

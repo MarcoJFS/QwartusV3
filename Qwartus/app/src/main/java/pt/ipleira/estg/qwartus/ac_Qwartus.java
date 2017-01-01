@@ -218,20 +218,21 @@ public class ac_Qwartus extends AppCompatActivity {
         });
 
         Button btnProcurar = (Button) findViewById(R.id.btnProcura);
-        final String spinertxt= spinerConcelho.getSelectedItem().toString();
+        final String spinertxt= (String) spinerConcelho.getSelectedItem();
 
         btnProcurar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                switch (spinertxt)
-                {
-                    case ""
-                }
+               /* switch (spinertxt) {
+                    case " ":*/
 
-                        Intent i = new Intent("android.intent.qwartus.RESULTADOPESQUISA");
-                        startActivity(i);
+                    Intent i = new Intent("android.intent.qwartus.PAGINAUSER");
+                    startActivity(i);
 
+                       /* Intent i = new Intent("android.intent.qwartus.RESULTADOPESQUISA");
+                        startActivity(i);*/
+               // }
                             }
 
         });

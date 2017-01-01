@@ -4,11 +4,11 @@
 
     <!-- <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission> -->
     <!-- <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/> -->
-    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <!-- <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission> -->
     <!-- <uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission> -->
     <!-- <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" /> -->
-
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -60,7 +60,8 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".detalhesPesquisa"
+        <activity
+            android:name=".detalhesPesquisa"
             android:label="@string/detalhesPesquisa">
             <intent-filter>
                 <action android:name="android.intent.qwartus.DETALHESPESQUISA" />
@@ -68,10 +69,28 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".NovoAnuncio"
+        <activity
+            android:name=".NovoAnuncio"
             android:label="@string/novoAnuncio">
             <intent-filter>
                 <action android:name="android.intent.qwartus.NOVOANUNCIO" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".PaginaUser"
+            android:label="@string/PaginaUser">
+        <intent-filter>
+            <action android:name="android.intent.qwartus.PAGINAUSER" />
+
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+        </activity>
+        <activity android:name=".AnunciosDoUtilizador"
+            android:label="@string/AnunciosDoUser">
+            <intent-filter>
+                <action android:name="android.intent.qwartus.ANUNCIOSUSER" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
