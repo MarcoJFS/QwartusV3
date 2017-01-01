@@ -217,6 +217,7 @@ public class ac_Qwartus extends AppCompatActivity {
         });
 
         Button btnProcurar = (Button) findViewById(R.id.btnProcura);
+        //final String spinertxt = spinerConcelho.getSelectedItem().toString();
 
         btnProcurar.setOnClickListener(new View.OnClickListener() {
             @Override
