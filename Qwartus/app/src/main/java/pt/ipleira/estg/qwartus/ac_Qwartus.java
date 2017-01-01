@@ -9,7 +9,6 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
-import android.widget.Toast;
 
 public class ac_Qwartus extends AppCompatActivity {
 
@@ -218,14 +217,25 @@ public class ac_Qwartus extends AppCompatActivity {
         });
 
         Button btnProcurar = (Button) findViewById(R.id.btnProcura);
+<<<<<<< HEAD
         final String spinertxt= (String) spinerConcelho.getSelectedItem();
+=======
+        //final String spinertxt = spinerConcelho.getSelectedItem().toString();
+>>>>>>> origin/master
 
         btnProcurar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
+<<<<<<< HEAD
                /* switch (spinertxt) {
                     case " ":*/
+=======
+                /*switch (spinertxt)
+                {
+                    case ""
+                }*/
+>>>>>>> origin/master
 
                     Intent i = new Intent("android.intent.qwartus.PAGINAUSER");
                     startActivity(i);

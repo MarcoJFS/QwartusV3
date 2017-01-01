@@ -60,12 +60,18 @@
         android:inputType="text|numberDecimal"
         android:text="2222"
         android:ems="10"
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/master
         android:id="@+id/etxtPreco"
         android:layout_alignBaseline="@+id/textView5"
         android:layout_alignBottom="@+id/textView5"
         android:layout_toEndOf="@+id/txtvUser" />
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/master
 
     <Button
         android:text="Guardar"
@@ -83,7 +89,10 @@
         android:layout_alignBottom="@+id/imvImagens"
         android:layout_alignParentEnd="true" />
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/master
     <ImageView
         android:layout_width="100dp"
         app:srcCompat="@android:drawable/ic_menu_add"
@@ -101,7 +110,10 @@
         android:layout_marginBottom="25dp"
         android:layout_above="@+id/btnGuardar"
         android:layout_alignStart="@+id/etxtDescricao" />
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/master
 
     <EditText
         android:layout_width="300dp"
@@ -111,7 +123,6 @@
         android:ems="10"
         android:id="@+id/etxtDescricao"
         android:layout_above="@+id/imvImagens"
-        android:layout_alignStart="@+id/textView4"
         android:layout_toStartOf="@+id/btnAddImagem"
         android:layout_alignEnd="@+id/etxtAssunto" />
 
@@ -157,6 +168,9 @@
         android:layout_below="@+id/imageView2"
         android:layout_toEndOf="@+id/spinnerLocalDistrito"
         android:layout_alignBottom="@+id/spinnerLocalDistrito" />
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> origin/master
 </RelativeLayout>

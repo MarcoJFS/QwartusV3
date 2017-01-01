@@ -14,9 +14,6 @@ import com.koushikdutta.async.future.FutureCallback;
 import com.koushikdutta.ion.Ion;
 import com.koushikdutta.ion.Response;
 
-import org.json.JSONException;
-import org.json.JSONObject;
-
 
 public class LoginPage extends AppCompatActivity {
 
@@ -60,9 +57,12 @@ public class LoginPage extends AppCompatActivity {
         json.addProperty("username", Username);
         json.addProperty("password", Password);
 
+<<<<<<< HEAD
         //final EditText Username = (EditText) findViewById(R.id.etUserName);
        // EditText Password = (EditText) findViewById(R.id.etPassword);
 
+=======
+>>>>>>> origin/master
         Button btnLogin = (Button) findViewById(R.id.btnLogin);
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
