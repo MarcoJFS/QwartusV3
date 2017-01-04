@@ -10,7 +10,13 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
 
+import com.google.gson.JsonArray;
+import com.koushikdutta.async.future.FutureCallback;
+import com.koushikdutta.ion.Ion;
+
 public class ac_Qwartus extends AppCompatActivity {
+
+    public static JsonArray nuncisrecebido;
 
     private CacheLocal dbHelper;
 
@@ -294,13 +300,20 @@ public class ac_Qwartus extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-               /* switch (spinertxt) {
-                    case " ":*/
-
-                /*switch (spinertxt)
-                {
-                    case ""
-                }*/
+                Ion.with(getApplicationContext())
+                        .load("GET", DataBaseManager.URL_Dominio + "/anuncio")
+                        .setTimeout(10000)
+                        .addHeader("Accept", "application/json")
+                        .addHeader("Content-type", "application/json")
+                        .asJsonArray()
+                        .setCallback(new FutureCallback<JsonArray>() {
+                            @Override
+                            public void onCompleted(Exception e, JsonArray result) {
+                                //int resultCount = result.size();
+                                nuncisrecebido = result;
+                                //nuncisrecebido = result;
+                            }
+                        });
 
                     Intent i = new Intent("android.intent.qwartus.RESULTADOPESQUISA");
                     startActivity(i);

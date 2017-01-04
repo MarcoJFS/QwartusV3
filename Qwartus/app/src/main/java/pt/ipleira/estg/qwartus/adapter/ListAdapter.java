@@ -55,7 +55,7 @@ public class ListAdapter extends BaseAdapter {
 
         ((TextView) convertView.findViewById(R.id.txtvTituloLV)).setText(anu.getAsunto());
         ((TextView) convertView.findViewById(R.id.txtvDescricaoLV)).setText(anu.getDescricao());
-        ((TextView) convertView.findViewById(R.id.txtPreçoLV)).setText(anu.getPreco());
+        ((TextView) convertView.findViewById(R.id.txtPreçoLV)).setText(Float.toString(anu.getPreco()));
         //((ImageView) convertView.findViewById(R.id.imgv_ImgAnuncioLV)).setImageResource(QwartusDataTest.getAllImg()[position]);
 
         return convertView;

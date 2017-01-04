@@ -113,16 +113,6 @@
         android:textSize="18sp"
         android:textStyle="normal|bold" />
 
-    <Button
-        android:text="@string/PaginaUserBtnAnuncios"
-        android:layout_width="@dimen/LayoutPaginaUserBtnAnunciosWidth"
-        android:layout_marginTop="27dp"
-        android:id="@+id/btnAnuncios"
-        android:layout_below="@+id/textView16"
-        android:layout_centerHorizontal="true"
-        android:layout_height="@dimen/LayoutPaginaUserBtnAnunciosHight"
-        android:textStyle="normal|bold" />
-
     <TextView
         android:text="18"
         android:layout_width="wrap_content"
@@ -140,5 +130,15 @@
         android:textStyle="normal|bold"
         android:layout_below="@+id/btnAnuncios"
         android:layout_alignStart="@+id/btnAnuncios" />
+
+    <Button
+        android:text="@string/PaginaUserBtnAnuncios"
+        android:layout_width="@dimen/LayoutPaginaUserBtnAnunciosWidth"
+        android:layout_marginTop="25dp"
+        android:id="@+id/btnAnuncios"
+        android:layout_height="@dimen/LayoutPaginaUserBtnAnunciosHight"
+        android:textStyle="normal|bold"
+        android:layout_below="@+id/textView16"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>

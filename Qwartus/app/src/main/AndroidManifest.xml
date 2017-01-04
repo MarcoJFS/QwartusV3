@@ -95,7 +95,13 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".UserMudar"></activity>
+        <activity android:name=".UserMudar"
+            android:label="@string/PaginaUseMudar">
+            <intent-filter>
+                <action android:name="android.intent.qwartus.USERMUDAR" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter></activity>
     </application>
 
 </manifest>

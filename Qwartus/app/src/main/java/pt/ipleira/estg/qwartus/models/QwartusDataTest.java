@@ -1,9 +1,11 @@
 package pt.ipleira.estg.qwartus.models;
 
-import android.content.Context;
+import com.google.gson.JsonObject;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import static pt.ipleira.estg.qwartus.ac_Qwartus.nuncisrecebido;
 
 
 /**
@@ -12,72 +14,42 @@ import java.util.List;
 
 public class QwartusDataTest {
     private static List<Anuncio> anuncios;
-    private static Context context;
 
-    //private Context context;
-
-    public QwartusDataTest(Context context) {
-        // getAnuncios() = context;
-        this.context = context;
-    }
-
-    public static List<Anuncio> getAnuncios(){
+    public static List<Anuncio> getAnuncios() {
 
         anuncios = new ArrayList<>();
 
-            /*Ion.with(context)
-                .load("GET", DataBaseManager.URL_Dominio + "/anuncio")
-                .setTimeout(10000)
-                .addHeader("Accept", "application/json")
-                .addHeader("Content-type", "application/json")
-                .asJsonArray()
-                .setCallback(new FutureCallback<JsonArray>() {
-                    @Override
-                    public void onCompleted(Exception e, JsonArray result) {*/
-                        /*int resultCount = result.size();
-                        anuncios = new ArrayList<>();
-                        //JsonObject jObj = result.get(9).getAsJsonObject();
-                        //String jStr = jObj.get("ce_id_user").toString();
+        if (anuncios == null) {
+            //JsonArray[] res = new JsonArray[0];
+            //for (JsonArray nuncisrecebido : res) {
 
-                        for (int i=0; i< resultCount; i++){
-                            JsonObject jObj = result.get(i).getAsJsonObject();
-                            String jStr = jObj.get("ce_id_user").toString();
+            int asd = nuncisrecebido.size();
+            for (int i=0;i<asd;i++){
+                JsonObject jObj = nuncisrecebido.get(i).getAsJsonObject();
+                Long jid_anuncio = jObj.get("id_anuncio").getAsLong();
+                int jce_id_user = jObj.get("ce_id_user").getAsInt();
+                String jtitulo = jObj.get("asunto").toString();
+                int jnpessoas = jObj.get("n_pessoas").getAsInt();
+                Float jPeco = jObj.get("preco").getAsFloat();
+                String jDescricao = jObj.get("descricao").toString();
+                String jcoordenadas = jObj.get("coordenadas").toString();
+                String jimagem0 = jObj.get("imagem0").toString();
+                String jimagem1 = jObj.get("imagem1").toString();
+                String jimagem2 = jObj.get("imagem2").toString();
+                String jimagem3 = jObj.get("imagem3").toString();
+                String jstatus = jObj.get("status").toString();
+                int jid_distrito = jObj.get("id_distrito").getAsInt();
+                int jid_concelho = jObj.get("id_concelho").getAsInt();
 
-                            //String jStrAssunto = jObj.get("asunto").toString();
-                            //String jStrdescricao = jObj.get("descricao").toString();
-                            //String jStrpreco = jObj.get("preco").toString();
-
-                            String jStrAssunto = "Titulo 1";
-                            String jStrdescricao = "Descricao 1";
-                            String jStrpreco = "150€";
-                            int jInt = Integer.parseInt(jStr);
-                            if(jInt == LoginClassSave.Account.id){
-                                anuncios.add(new Anuncio(jStrAssunto,jStrdescricao,jStrpreco, R.drawable.qwartus2));
-                            }
-                        }*/
-                        /*anuncios.add(new Anuncio("Titulo 1","Descricao 1","150€", R.drawable.qwartus2));
-                    }
-                });*/
+                anuncios.add(new Anuncio(jid_anuncio, jce_id_user, jtitulo, jnpessoas, jPeco, jDescricao, jcoordenadas, jimagem0, jimagem1, jimagem2,jimagem3, jstatus, jid_distrito, jid_concelho));
+            }
 
 
-        /*anuncios = new ArrayList<>();
-        String jStrAssunto = "Titulo 1";
-        String jStrdescricao = "Descricao 1";
-        String jStrpreco = "150€";
-        anuncios.add(new Anuncio(jStrAssunto,jStrdescricao,jStrpreco, R.drawable.qwartus2));*/
-        //anuncios.add(new Anuncio("Titulo 1","Descricao 1","150€", R.drawable.qwartus2));
-        /*if (anuncios == null){
-            anuncios = new ArrayList<>();
+        }
+        //float f = (float) 12;
+        //anuncios.add(new Anuncio(1, 1, "asd", 2, f, "asd", "adsadsada", "asd", "ads", "asd","asd", "asd", 1, 1));
 
-            anuncios.add(new Anuncio("Titulo 1","Descricao 1","150€", R.drawable.qwartus2));
-            anuncios.add(new Anuncio("Titulo 1","Descricao 1","190€", R.drawable.qwartus2));
-            anuncios.add(new Anuncio("Titulo 1","Descricao 1","155€", R.drawable.qwartus2));
-            anuncios.add(new Anuncio("Titulo 1","Descricao 1","160€", R.drawable.qwartus2));
-            anuncios.add(new Anuncio("Titulo 1","Descricao 1","180€", R.drawable.qwartus2));
-        }*/
         return anuncios;
-    }
-
     /*public static Integer [] getAllImg(){
         Integer imgs[] = new Integer[getAnuncios().size()];
 
@@ -89,6 +61,5 @@ public class QwartusDataTest {
     }*/
 
 
-
-
+    }
 }

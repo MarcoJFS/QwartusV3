@@ -7,7 +7,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import com.koushikdutta.async.future.FutureCallback;
 import com.koushikdutta.ion.Ion;
@@ -26,7 +25,7 @@ public class PaginaUser extends AppCompatActivity {
         final TextView tvEmail = (TextView) findViewById(R.id.tvEmail);
         final TextView tvNumAnun = (TextView) findViewById(R.id.tvNumAnun);
 
-        Ion.with(getApplicationContext())
+        /*Ion.with(getApplicationContext())
                 .load("GET", DataBaseManager.URL_Dominio + "/anuncio")
                 .setTimeout(10000)
                 .addHeader("Accept", "application/json")
@@ -58,7 +57,7 @@ public class PaginaUser extends AppCompatActivity {
 
                         }
                     }
-                });
+                });*/
                 /*.withResponse()
                 .setCallback(new FutureCallback<Response<JsonArray>>() {
                     @Override
@@ -121,6 +120,14 @@ public class PaginaUser extends AppCompatActivity {
             }
         });
 
+        Button btnAlterarContacto = (Button) findViewById(R.id.btnAlterarContacto);
+        btnAlterarContacto.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent("android.intent.qwartus.USERMUDAR");
+                startActivity(i);
+            }
+        });
 
     }
 }
