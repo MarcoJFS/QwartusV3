@@ -5,14 +5,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.List;
 
 import pt.ipleira.estg.qwartus.R;
 import pt.ipleira.estg.qwartus.models.Anuncio;
-import pt.ipleira.estg.qwartus.models.QwartusDataTest;
 
 public class ListAdapter extends BaseAdapter {
 
@@ -55,10 +53,10 @@ public class ListAdapter extends BaseAdapter {
 
         Anuncio anu = anuncios.get(position);
 
-        ((TextView) convertView.findViewById(R.id.txtvTituloLV)).setText(anu.getTitulo());
+        ((TextView) convertView.findViewById(R.id.txtvTituloLV)).setText(anu.getAsunto());
         ((TextView) convertView.findViewById(R.id.txtvDescricaoLV)).setText(anu.getDescricao());
         ((TextView) convertView.findViewById(R.id.txtPreçoLV)).setText(anu.getPreco());
-        ((ImageView) convertView.findViewById(R.id.imgv_ImgAnuncioLV)).setImageResource(QwartusDataTest.getAllImg()[position]);
+        //((ImageView) convertView.findViewById(R.id.imgv_ImgAnuncioLV)).setImageResource(QwartusDataTest.getAllImg()[position]);
 
         return convertView;
     }

@@ -5,9 +5,10 @@ package pt.ipleira.estg.qwartus;
  */
 
 public class LoginClassSave {
-    public static Boolean login;
+    public static Boolean login = false;
     public static String token;
     public static Account account;
+    public static int numAnun;
 
     /*@JsonCreator
     public ClassSave(@JsonProperty("token") String token, @JsonProperty("account") Account account){
@@ -15,10 +16,11 @@ public class LoginClassSave {
         this.account = account;
     }*/
 
-    public LoginClassSave(Boolean login, String token, Account account) {
+    public LoginClassSave(Boolean login, String token, Account account, int numAnun) {
         this.login = login;
         this.token = token;
         this.account = account;
+        this.numAnun = numAnun;
     }
 
     public static final class Account {

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_user_mudar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="pt.ipleira.estg.qwartus.UserMudar"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <TextView
+        android:text="@string/primeiroNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView6"
+        android:layout_above="@+id/etxtAssunto"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="textMultiLine"
+        android:text="qwerty"
+        android:ems="10"
+        android:id="@+id/etprimeiro_nome"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentStart="true"
+        android:layout_weight="0.02" />
+
+    <TextView
+        android:text="@string/ultimoNome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:layout_above="@+id/etxtAssunto"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="textMultiLine"
+        android:text="qwerty"
+        android:ems="10"
+        android:id="@+id/etultimo_nome"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="@string/etcontacto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView8"
+        android:layout_above="@+id/etxtAssunto"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="textMultiLine"
+        android:text="qwerty"
+        android:ems="10"
+        android:id="@+id/etcontacto"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="@string/btnAlterarContactoAlterar"
+        android:layout_width="match_parent"
+        android:layout_marginTop="27dp"
+        android:id="@+id/btnAlterar"
+        android:layout_below="@+id/textView16"
+        android:layout_centerHorizontal="true"
+        android:layout_height="@dimen/LayoutPaginaUserBtnAnunciosHight"
+        android:textStyle="normal|bold" />
+
+</LinearLayout>

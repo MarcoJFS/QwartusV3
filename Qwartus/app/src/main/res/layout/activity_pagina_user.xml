@@ -113,16 +113,6 @@
         android:textSize="18sp"
         android:textStyle="normal|bold" />
 
-    <TextView
-        android:text="18"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/textView16"
-        android:layout_toEndOf="@+id/tvContato"
-        android:layout_marginStart="15dp"
-        android:id="@+id/textView18"
-        android:textSize="18sp" />
-
     <Button
         android:text="@string/PaginaUserBtnAnuncios"
         android:layout_width="@dimen/LayoutPaginaUserBtnAnunciosWidth"
@@ -132,5 +122,23 @@
         android:layout_centerHorizontal="true"
         android:layout_height="@dimen/LayoutPaginaUserBtnAnunciosHight"
         android:textStyle="normal|bold" />
+
+    <TextView
+        android:text="18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvNumAnun"
+        android:textSize="18sp"
+        android:layout_above="@+id/btnAnuncios"
+        android:layout_alignStart="@+id/tvApelido" />
+
+    <Button
+        android:text="@string/PaginaUserBtnNovoAnuncio"
+        android:layout_width="@dimen/LayoutPaginaUserBtnAnunciosWidth"
+        android:id="@+id/btnNovoAnuncio"
+        android:layout_height="@dimen/LayoutPaginaUserBtnAnunciosHight"
+        android:textStyle="normal|bold"
+        android:layout_below="@+id/btnAnuncios"
+        android:layout_alignStart="@+id/btnAnuncios" />
 
 </RelativeLayout>

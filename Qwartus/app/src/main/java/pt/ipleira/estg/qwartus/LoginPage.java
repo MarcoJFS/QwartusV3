@@ -24,6 +24,8 @@ public class LoginPage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_page);
 
+
+
         Button btnNotMember = (Button) findViewById(R.id.btnNotMember);
         btnNotMember.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -57,12 +59,9 @@ public class LoginPage extends AppCompatActivity {
         json.addProperty("username", Username);
         json.addProperty("password", Password);
 
-<<<<<<< HEAD
         //final EditText Username = (EditText) findViewById(R.id.etUserName);
        // EditText Password = (EditText) findViewById(R.id.etPassword);
 
-=======
->>>>>>> origin/master
         Button btnLogin = (Button) findViewById(R.id.btnLogin);
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -83,7 +82,6 @@ public class LoginPage extends AppCompatActivity {
                 //Ion.with(LoginPage.this)
                         //.load("POST", "http://localhost/ProjWeb/api/web/v1/user/authenticate")
                         .load("POST", DataBaseManager.URL_Dominio + "/user/authenticate")
-
                         .setTimeout(10000)
                         .addHeader("Accept", "application/json")
                         .addHeader("Content-type", "application/json")
@@ -128,7 +126,7 @@ public class LoginPage extends AppCompatActivity {
                                         LoginClassSave.account.email = result.getResult().getAsJsonObject("account").get("email").getAsString();
                                         LoginClassSave.login = true;
 
-                                        Intent i = new Intent("android.intent.qwartus.NOVOANUNCIO");
+                                        Intent i = new Intent("android.intent.qwartus.PAGINAUSER");
                                         startActivity(i);
 
                                         finish();

@@ -36,7 +36,11 @@
     <string name="PaginaUserEmail">Email:</string>
     <string name="PaginaUserNrAnuncios">Número de anúncios:</string>
     <string name="PaginaUserBtnAnuncios">Anuncios</string>
+    <string name="PaginaUserBtnNovoAnuncio">Novo Anuncio</string>
     <string name="btnAlterarContactoAlterar">Alterar</string>
+    <string name="primeiroNome">Primeiro Nome:</string>
+    <string name="ultimoNome">Último Nome:</string>
+    <string name="etcontacto">Contacto:</string>
 
     <string name="NseleNd">Não selecionou nenhum concelho.</string>
 

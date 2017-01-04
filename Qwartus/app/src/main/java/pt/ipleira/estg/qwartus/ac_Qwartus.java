@@ -12,10 +12,77 @@ import android.widget.Spinner;
 
 public class ac_Qwartus extends AppCompatActivity {
 
+    private CacheLocal dbHelper;
+
+    /*protected void onOpen(){
+        if (LoginClassSave.login != false){
+            Intent i = new Intent("android.intent.qwartus.MENULOGINFEITO");
+            startActivity(i);
+        }
+    }*/
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ac__qwartus);
+
+
+        /*dbHelper = new CacheLocal(this);
+
+        Ion.with(getApplicationContext())
+                .load("GET", DataBaseManager.URL_Dominio + "/anuncio")
+                .setTimeout(10000)
+                .addHeader("Accept", "application/json")
+                .addHeader("Content-type", "application/json")
+                .asJsonArray()
+                .setCallback(new FutureCallback<JsonArray>() {
+                    @Override
+                    public void onCompleted(Exception e, JsonArray result) {
+                        int resultCount = result.size();
+
+                        for (int i=0; i< resultCount; i++){
+                        JsonObject jObj = result.get(i).getAsJsonObject();
+                        Long jid_anuncio = jObj.get("id_anuncio").getAsLong();
+                        int jce_id_user = jObj.get("ce_id_user").getAsInt();
+                        String jasunto = jObj.get("asunto").toString();
+                        String jpreco = jObj.get("preco").toString();
+                        String jdescricao = jObj.get("descricao").toString();
+                        int jid_distrito = jObj.get("id_distrito").getAsInt();
+                        int jid_concelho = jObj.get("id_concelho").getAsInt();
+
+                        dbHelper.addAnuncios(new Anuncio(jid_anuncio,
+                                jce_id_user, jasunto,
+                                jpreco, jdescricao,
+                                jid_distrito, jid_concelho));
+                    }}
+                });*/
+                /*.setCallback(new FutureCallback<JsonArray>() {
+                    @Override
+                    public void onCompleted(Exception e, JsonArray result) {
+                        int resultCount = result.size();
+                        //JsonObject jObj = result.get(9).getAsJsonObject();
+                        //String jStr = jObj.get("ce_id_user").toString();
+
+                        for (int i=0; i< resultCount; i++){
+                            JsonObject jObj = result.get(i).getAsJsonObject();
+                            Long jid_anuncio = jObj.get("id_anuncio").getAsLong();
+                            int jce_id_user = jObj.get("ce_id_user").getAsInt();
+                            String jasunto = jObj.get("asunto").toString();
+                            String jpreco = jObj.get("preco").toString();
+                            String jdescricao = jObj.get("descricao").toString();
+                            int jid_distrito = jObj.get("id_distrito").getAsInt();
+                            int jid_concelho = jObj.get("id_concelho").getAsInt();
+
+                        dbHelper.addAnuncios(new Anuncio(jid_anuncio,
+                                jce_id_user, jasunto,
+                                jpreco, jdescricao,
+                                jid_distrito, jid_concelho));
+
+                        }
+                    }
+                });*/
+
+
 
         // Busca o Spinner Distrito
         Spinner spinnerDistrito = (Spinner) findViewById(R.id.spinnerDistrito);
@@ -34,6 +101,7 @@ public class ac_Qwartus extends AppCompatActivity {
         spinnerDistrito.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+
                 // busca os spinners
                 Spinner spinnerConcelho = (Spinner) findViewById(R.id.spinnerConcelho);
                 Spinner spinnerDistrito = (Spinner) findViewById(R.id.spinnerDistrito);
@@ -202,8 +270,9 @@ public class ac_Qwartus extends AppCompatActivity {
         btnLogin.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent("android.intent.qwartus.LOGINPAGE");
-                startActivity(i);
+                    Intent i = new Intent("android.intent.qwartus.LOGINPAGE");
+                    startActivity(i);
+
             }
         });
 
@@ -217,27 +286,23 @@ public class ac_Qwartus extends AppCompatActivity {
         });
 
         Button btnProcurar = (Button) findViewById(R.id.btnProcura);
-<<<<<<< HEAD
         final String spinertxt= (String) spinerConcelho.getSelectedItem();
-=======
+
         //final String spinertxt = spinerConcelho.getSelectedItem().toString();
->>>>>>> origin/master
 
         btnProcurar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-<<<<<<< HEAD
                /* switch (spinertxt) {
                     case " ":*/
-=======
+
                 /*switch (spinertxt)
                 {
                     case ""
                 }*/
->>>>>>> origin/master
 
-                    Intent i = new Intent("android.intent.qwartus.PAGINAUSER");
+                    Intent i = new Intent("android.intent.qwartus.RESULTADOPESQUISA");
                     startActivity(i);
 
                        /* Intent i = new Intent("android.intent.qwartus.RESULTADOPESQUISA");
@@ -246,6 +311,6 @@ public class ac_Qwartus extends AppCompatActivity {
                             }
 
         });
-
     }
+
 }

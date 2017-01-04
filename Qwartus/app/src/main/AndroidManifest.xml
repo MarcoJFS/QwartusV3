@@ -5,8 +5,7 @@
     <!-- <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission> -->
     <!-- <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/> -->
     <uses-permission android:name="android.permission.INTERNET" />
-
-    <!-- <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission> -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <!-- <uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission> -->
     <!-- <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" /> -->
     <application
@@ -78,16 +77,17 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".PaginaUser"
+        <activity
+            android:name=".PaginaUser"
             android:label="@string/PaginaUser">
-        <intent-filter>
-            <action android:name="android.intent.qwartus.PAGINAUSER" />
+            <intent-filter>
+                <action android:name="android.intent.qwartus.PAGINAUSER" />
 
-            <category android:name="android.intent.category.DEFAULT" />
-        </intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
         </activity>
-        <activity android:name=".AnunciosDoUtilizador"
+        <activity
+            android:name=".AnunciosDoUtilizador"
             android:label="@string/AnunciosDoUser">
             <intent-filter>
                 <action android:name="android.intent.qwartus.ANUNCIOSUSER" />
@@ -95,6 +95,7 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity android:name=".UserMudar"></activity>
     </application>
 
 </manifest>

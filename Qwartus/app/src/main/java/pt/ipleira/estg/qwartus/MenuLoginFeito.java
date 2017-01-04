@@ -31,11 +31,11 @@ public class MenuLoginFeito extends AppCompatActivity {
         btnLogout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                /*LoginClassSave.token = "";
-                LoginClassSave.account.username = "";
-                LoginClassSave.account.email = "";
-                LoginClassSave.account.id = 0;*/
-                LoginClassSave.login = false;
+                //LoginClassSave.token = "";
+                //LoginClassSave.account.username = "";
+                //LoginClassSave.account.email = "";
+                //LoginClassSave.account.id = 0;
+                //LoginClassSave.login = false;
 
                 Intent i = new Intent("android.intent.qwartus.NOVOANUNCIO");
                 startActivity(i);
@@ -212,23 +212,7 @@ public class MenuLoginFeito extends AppCompatActivity {
 
         });
 
-        Button btnLogin = (Button) findViewById(R.id.btnLogin);
-        btnLogin.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent("android.intent.qwartus.LOGINPAGE");
-                startActivity(i);
-            }
-        });
 
-        Button btnRegistar = (Button) findViewById(R.id.btnRegistar);
-        btnRegistar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent("android.intent.qwartus.REGISTERPAGE");
-                startActivity(i);
-            }
-        });
 
     }
 }

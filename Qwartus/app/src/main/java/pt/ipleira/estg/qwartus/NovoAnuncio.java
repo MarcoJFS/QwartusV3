@@ -1,6 +1,7 @@
 package pt.ipleira.estg.qwartus;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -291,6 +292,9 @@ public class NovoAnuncio extends AppCompatActivity {
                             public void onCompleted(Exception e, Response<JsonObject> result) {
                                 Toast toast = Toast.makeText(context, "Anuncio publicado com sucesso", duration);
                                 toast.show();
+
+                                Intent i = new Intent("android.intent.qwartus.PAGINAUSER");
+                                startActivity(i);
                             }
                         });
                         /*.setCallback(new FutureCallback<JsonObject>() {

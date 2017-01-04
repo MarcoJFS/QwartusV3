@@ -6,47 +6,77 @@ package pt.ipleira.estg.qwartus.models;
 
 public class Anuncio {
 
-    private String Titulo;
-    private String Descricao;
-    private String Preco;
-    private int Imagem;
+    private long id_anuncio;
+    private int ce_id_user;
+    private String asunto;
+    private String preco;
+    private String descricao;
+    private int id_distrito;
+    private int id_concelho;
 
-    public Anuncio(String titulo, String descricao, String preco, int imagem) {
-        Titulo = titulo;
-        Descricao = descricao;
-        Preco = preco;
-        Imagem = imagem;
+    public Anuncio(long id_anuncio, int ce_id_user, String asunto, String preco, String descricao, int id_distrito, int id_concelho) {
+        this.id_anuncio = id_anuncio;
+        this.ce_id_user = ce_id_user;
+        this.asunto = asunto;
+        this.preco = preco;
+        this.descricao = descricao;
+        this.id_distrito = id_distrito;
+        this.id_concelho = id_concelho;
     }
 
-    public String getTitulo() {
-        return Titulo;
+    public long getId_anuncio() {
+        return id_anuncio;
     }
 
-    public void setTitulo(String titulo) {
-        Titulo = titulo;
+    public void setId_anuncio(long id_anuncio) {
+        this.id_anuncio = id_anuncio;
     }
 
-    public String getDescricao() {
-        return Descricao;
+    public int getCe_id_user() {
+        return ce_id_user;
     }
 
-    public void setDescricao(String descricao) {
-        Descricao = descricao;
+    public void setCe_id_user(int ce_id_user) {
+        this.ce_id_user = ce_id_user;
+    }
+
+    public String getAsunto() {
+        return asunto;
+    }
+
+    public void setAsunto(String asunto) {
+        this.asunto = asunto;
     }
 
     public String getPreco() {
-        return Preco;
+        return preco;
     }
 
     public void setPreco(String preco) {
-        Preco = preco;
+        this.preco = preco;
     }
 
-    public int getImagem() {
-        return Imagem;
+    public String getDescricao() {
+        return descricao;
     }
 
-    public void setImagem(int imagem) {
-        Imagem = imagem;
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
+    }
+
+    public int getId_distrito() {
+        return id_distrito;
+    }
+
+    public void setId_distrito(int id_distrito) {
+        this.id_distrito = id_distrito;
+    }
+
+    public int getId_concelho() {
+        return id_concelho;
+    }
+
+    public void setId_concelho(int id_concelho) {
+        this.id_concelho = id_concelho;
     }
 }
