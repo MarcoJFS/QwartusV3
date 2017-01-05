@@ -312,11 +312,12 @@ public class ac_Qwartus extends AppCompatActivity {
                                 //int resultCount = result.size();
                                 nuncisrecebido = result;
                                 //nuncisrecebido = result;
+
+                                /*Intent i = new Intent("android.intent.qwartus.RESULTADOPESQUISA");
+                                startActivity(i);*/
                             }
                         });
 
-                    Intent i = new Intent("android.intent.qwartus.RESULTADOPESQUISA");
-                    startActivity(i);
 
                        /* Intent i = new Intent("android.intent.qwartus.RESULTADOPESQUISA");
                         startActivity(i);*/

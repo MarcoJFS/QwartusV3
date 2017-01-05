@@ -19,7 +19,7 @@ public class QwartusDataTest {
 
         anuncios = new ArrayList<>();
 
-        if (anuncios == null) {
+        //if (anuncios == null) {
             //JsonArray[] res = new JsonArray[0];
             //for (JsonArray nuncisrecebido : res) {
 
@@ -32,20 +32,16 @@ public class QwartusDataTest {
                 int jnpessoas = jObj.get("n_pessoas").getAsInt();
                 Float jPeco = jObj.get("preco").getAsFloat();
                 String jDescricao = jObj.get("descricao").toString();
-                String jcoordenadas = jObj.get("coordenadas").toString();
-                String jimagem0 = jObj.get("imagem0").toString();
-                String jimagem1 = jObj.get("imagem1").toString();
-                String jimagem2 = jObj.get("imagem2").toString();
-                String jimagem3 = jObj.get("imagem3").toString();
+                //String jcoordenadas = jObj.get("coordenadas").toString();
                 String jstatus = jObj.get("status").toString();
                 int jid_distrito = jObj.get("id_distrito").getAsInt();
                 int jid_concelho = jObj.get("id_concelho").getAsInt();
 
-                anuncios.add(new Anuncio(jid_anuncio, jce_id_user, jtitulo, jnpessoas, jPeco, jDescricao, jcoordenadas, jimagem0, jimagem1, jimagem2,jimagem3, jstatus, jid_distrito, jid_concelho));
+                anuncios.add(new Anuncio(jid_anuncio, jce_id_user, jtitulo, jnpessoas, jPeco, jDescricao, jstatus, jid_distrito, jid_concelho));
             }
 
 
-        }
+        //}
         //float f = (float) 12;
         //anuncios.add(new Anuncio(1, 1, "asd", 2, f, "asd", "adsadsada", "asd", "ads", "asd","asd", "asd", 1, 1));
 
